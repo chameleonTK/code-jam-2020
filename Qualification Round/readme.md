@@ -92,7 +92,7 @@ assert (overlap((50, 100, 0), (0, 160, 1)) == True)
 ```
 I'm sure this can be more optimised but I'm just little paranoid.
 
-## ESAb ATAd (database)
+## ESAb ATAd
 Admittedly, this is the most annoying problem in this round but also the most fun. I spent 7 hours just to finish it but still isn't enough for the biggest testcase 😭.
 
 The question is to get data which can be gathered through queries but the tricky part is the data can be changed -- they said because of `quantum ... fuzzy fuzzy word`.
@@ -166,11 +166,11 @@ It is not that hard for the first condition but I have no clue to the second.
 
 My approach is using recursive and backtracking to contruct all possible matrix that satisfy both conditions but the time complexity is getting crazy. It works just for N < 5. Even when N==5, it goes dumps from time to time, especially when given K that is impossible to contruct a matrix, the programe has to finish all recursive then answer `IMPOSSIBLE`. Which is also impossible to run in a proper time limit. My stump idea is to run all the possible query and save it as a json then put it in my submitted code. So I made it!! Funny O(1) solution.
 
-The second attempt is to construct one simple matrix and use row/column swapping to get a satisfying K but it didn't work. Only a few number of K can be constructed in this way.
+The second attempt is to construct one simple matrix and use row/column swapping to get a satisfying K but it didn't work. Only a few number of K can be constructed in this way 🤕.
 
-Before I give up, I wrote another code which I started with getting diagonal values then use them to limit the options in recursive fuction but it is still not enough.
+Before I give up, I wrote another code which I started with getting diagonal values then use them to limit the options in recursive fuction but it is still not enough 🤕🤕.
 
-I am looking forward to an effecient solution to this problem. People sais it might be about `bipartite matching` but I'm still clueless about that word.
+I am looking forward to an effecient solution to this problem 🤩. People sais it might be about `bipartite matching` but I'm still clueless about that word 🤕🤕🤕.
 
 
 
